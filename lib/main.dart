@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'ListPage.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
+              child: ListView(
                 children: [
                   Image(image: AssetImage('assets/crown.jpg'),width: 300,height: 300,),
           TextFormField(
@@ -77,6 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
           ),
+                  SizedBox(height: 15,),
+                  TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ListPage()));
+                  }, child: Text('Lets go!')),
 
 
 
