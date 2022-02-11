@@ -61,30 +61,40 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListView(
                 children: [
                   Image(image: AssetImage('assets/crown.jpg'),width: 300,height: 300,),
-          TextFormField(
-              style: TextStyle(color: Colors.black38),
-              keyboardType: TextInputType.text,
-              autofocus: false,
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: TextFormField(
+                style: TextStyle(color: Colors.black38),
+                keyboardType: TextInputType.text,
+                autofocus: false,
 
-              decoration: InputDecoration(
-                labelText: 'Enter your name to be added to the club',
-                focusedBorder:OutlineInputBorder(
-                  borderSide: const BorderSide(color: Colors.black38, width: 2.0),
-                  borderRadius: BorderRadius.circular(25.0),
+                decoration: InputDecoration(
+                  labelText: 'Enter your name ',
+                  focusedBorder:OutlineInputBorder(
+                    borderSide: const BorderSide(color: Colors.black38, width: 2.0),
+                    borderRadius: BorderRadius.circular(25.0),
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(32),
+                  ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(32),
-                ),
-              ),
+            ),
           ),
-                  SizedBox(height: 15,),
-                  TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => ListPage()));
-                  }, child: Text('Lets go!')),
 
-
-
+                  Padding(
+                    padding: const EdgeInsets.all(50.0),
+                    child: OutlineButton(onPressed: ()  {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ListPage()));
+                    },
+                      shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                      child: Text('Join The Club',style: GoogleFonts.dancingScript(
+                        color: Colors.brown,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold
+                      )),
+                    ),
+                  ),
                 ],
               ),
             ),

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "648273107101",
+    "project_id": "the-dollarionairs-club",
+    "storage_bucket": "the-dollarionairs-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648273107101:android:45dfee6a56ed51efffdc74",
+        "android_client_info": {
+          "package_name": "com.xenontech.richpeople"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648273107101-be8ht42k2s384qvgd7qpebutk7eo3077.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2o4MWzAPlrss1U5TBoEjAHrCcqGZ8ufs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648273107101-be8ht42k2s384qvgd7qpebutk7eo3077.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
